@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Duolingo Typing Extension",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.duolingo.com/lesson/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
